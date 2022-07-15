@@ -18,6 +18,7 @@ body {
 
 .card {
   width: 600px;
+  height: fit-content;
   display: flex;
   overflow: hidden;
   border-radius: 10px;
@@ -36,10 +37,13 @@ body {
 }
 .card .content {
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
-.card .content .text {
+/* .card .content .text {
   padding-bottom: 30px;
-}
+} */
 .card .content .text h5 {
   text-transform: uppercase;
   font-weight: 500;
@@ -51,6 +55,7 @@ body {
 .card .content .text h1 {
   font-family: "Fraunces", serif;
   font-weight: 700;
+line-height: 1;
   padding-bottom: 20px;
   padding-right: 13px;
   color: hsl(212, 21%, 14%);
@@ -76,7 +81,7 @@ body {
   text-decoration: line-through;
 }
 .card .content a {
-  margin-top: 30px;
+  /* margin-top: 30px; */
   display: block;
   width: 100%;
   text-align: center;
